@@ -19,7 +19,7 @@ public class Item {
     private String itemName; // A
 
     @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
-    @Range(min = 1000, max = 1000000)
+    @Range(min = 1000, max = 1000000, groups = {SaveCheck.class, UpdateCheck.class})
     private Integer price; // A, typeMismatch
 
     @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
